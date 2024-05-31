@@ -5,7 +5,7 @@
 #  library(cosimmr)
 
 ## -----------------------------------------------------------------------------
-data(geese_data_day1)
+geese_data_day1 = cosimmr::geese_data_day1
 
 ## ----include = FALSE----------------------------------------------------------
 library(cosimmr)
@@ -27,7 +27,7 @@ cosimmr_1 <- with(
 ## -----------------------------------------------------------------------------
 plot(cosimmr_1)
 
-## -----------------------------------------------------------------------------
+## ----results='hide', message=FALSE--------------------------------------------
 cosimmr_1_out = cosimmr_ffvb(cosimmr_1)
 
 ## -----------------------------------------------------------------------------
@@ -39,20 +39,20 @@ plot(cosimmr_1_out, type ="prop_histogram", obs = 1)
 ## ----eval = FALSE-------------------------------------------------------------
 #  data("alligator_data")
 
-## -----------------------------------------------------------------------------
-Length = alligator_data$length
-cosimmr_ali <-cosimmr_load(
-    formula = as.matrix(alligator_data$mixtures) ~ Length,
-    source_names = alligator_data$source_names,
-    source_means = as.matrix(alligator_data$source_means),
-    source_sds = as.matrix(alligator_data$source_sds),
-    correction_means = as.matrix(alligator_data$TEF_means),
-    correction_sds = as.matrix(alligator_data$TEF_sds))
+## ----eval = FALSE-------------------------------------------------------------
+#  Length = alligator_data$length
+#  cosimmr_ali <-cosimmr_load(
+#      formula = as.matrix(alligator_data$mixtures) ~ Length,
+#      source_names = alligator_data$source_names,
+#      source_means = as.matrix(alligator_data$source_means),
+#      source_sds = as.matrix(alligator_data$source_sds),
+#      correction_means = as.matrix(alligator_data$TEF_means),
+#      correction_sds = as.matrix(alligator_data$TEF_sds))
 
 ## ----eval = FALSE-------------------------------------------------------------
 #  plot(cosimmr_ali, colour_by_cov = TRUE, cov_name = "Length")
 
-## ----eval = FALSE-------------------------------------------------------------
+## ----results='hide', message=FALSE, eval = FALSE------------------------------
 #  cosimmr_ali_out = cosimmr_ffvb(cosimmr_ali)
 
 ## ----eval = FALSE-------------------------------------------------------------

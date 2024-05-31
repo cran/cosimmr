@@ -43,10 +43,10 @@ library(cosimmr)
 This will load the `cosimmr` package and all the associated packages. You’ll need to type the `library(cosimmr)` command every time you start R.
 
 
-There is some sample data sets (from ADD PAPER REF) available within cosimmr. 
+There is some sample data sets (from Inger et al 2006, Nifong et al 2015, Galloway et al 2015) available within cosimmr. 
 Use the following command to access one.
 ```{r}
-data(geese_data_day1)
+geese_data_day1 = cosimmr::geese_data_day1
 ```
 
 This data can then be loaded into cosimmr using the function `cosimmr_load`
@@ -77,7 +77,7 @@ plot(cosimmr_1)
 
 The data can then be run through `cosimmr_ffvb`, the main function of the `cosimmr` 
 package.
-```{r}
+```{r, results='hide', message=FALSE}
 cosimmr_1_out = cosimmr_ffvb(cosimmr_1)
 ```
 
@@ -100,7 +100,7 @@ data("alligator_data")
 ```
 
 Then we use `cosimmr_load` to create a "cosimmr_in" object
-```{r}
+```{r, eval = FALSE}
 Length = alligator_data$length
 cosimmr_ali <-cosimmr_load(
     formula = as.matrix(alligator_data$mixtures) ~ Length,
@@ -117,11 +117,11 @@ plot(cosimmr_ali, colour_by_cov = TRUE, cov_name = "Length")
 ```
 
 Then we can run the mixing model:
-```{r, eval = FALSE}
+```{r, results='hide', message=FALSE, eval = FALSE}
 cosimmr_ali_out = cosimmr_ffvb(cosimmr_ali)
 ```
 
-We can then look at a summary of the data. This defaults to individual 1
+We can then look at a summary of the data. This defaults to observation 1.
 ```{r, eval = FALSE}
 summary(cosimmr_ali_out, type = "statistics")
 ```

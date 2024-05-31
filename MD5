@@ -1,4 +1,4 @@
-41a587b329b15df999f351ed8214263f *DESCRIPTION
+2a4a900f7010deb097292df27f123af9 *DESCRIPTION
 7f39f971b9dfc9544e9e806c8ef77aa5 *NAMESPACE
 0561795f97e3013601f385573f59d5f4 *R/RcppExports.R
 f07cf0318d21179954b8dbbae346e531 *R/cosimmr.R
@@ -16,7 +16,7 @@ d613e430daa7b312e58ee1367236fe5e *R/posterior_predictive.cosimmr_output.R
 31ccea07783bfbd0896c7d86887d1263 *R/prior_viz.cosimmr_output.R
 7d86c22189ba5b5e65eb8c862c53d414 *R/summary.cosimmr_output.R
 0897c21994eb3e68dd7247befb3b9439 *R/summary.cosimmr_pred_out.R
-50232276fda6c284d5b4e10a0a391687 *build/vignette.rds
+b3160b4cea9b7e12715f3117479d2508 *build/vignette.rds
 65e23371c94da2c516aab2b41eefd839 *data/alligator_data.rda
 4459e31e69ca76806291936a947750a4 *data/cladocera_data.rda
 e7521ea845813c81c0034ba9bb7046d3 *data/geese_data.rda
@@ -25,9 +25,14 @@ e29731190bd455b9c61d88f2e3c480e6 *data/geese_data_day1.rda
 a2a68d13175e781027f785c3b5b3e924 *data/simmr_data_1.rda
 c3f2161b68a3dcf154b599471d8cf6ee *data/simmr_data_2.rda
 dd2bc2b48a051e3c0887d1024c10fd24 *data/square_data.rda
-5f8fadf821d878c877e16e3598676ea3 *inst/doc/cosimmr.R
-2a14bf7e834063eab0b346d2404f50c6 *inst/doc/cosimmr.Rmd
-d96730d6fd3c335b3468c42a778612ca *inst/doc/cosimmr.html
+c97934ecc99e4bbd42c33a5f2c73af0e *inst/doc/cosimmr.R
+469abcc952b1f4a302d6640e893474a1 *inst/doc/cosimmr.Rmd
+33d130f4e49413dc3e093cfc1fed98bc *inst/doc/cosimmr.html
+3d8b524dca508998dee06e32b8d19e9d *inst/doc/cosimmr_quick_start.R
+6c6f02dd1251f3158c2f3c4654587796 *inst/doc/cosimmr_quick_start.Rmd
+16262b35ea813729f0b5ca924cf72a91 *inst/doc/cosimmr_quick_start.html
+6f37ae2c7c16bababd93a472076a091f *inst/extdata/geese_data.xls
+362a64524717e83d15342f7f6f343ed7 *inst/extdata/geese_data_small.xls
 4d6454640f3499cca4975a2fa65a4102 *man/alligator_data.Rd
 d9541005845c54b02ef2b8bda5c8f7eb *man/cladocera_data.Rd
 6ea86ea85719b62e7c68e9f09e42f042 *man/cosimmr.Rd
@@ -56,4 +61,5 @@ c89d6b95d18721894ab45341d0fbc7a6 *src/Makevars.win
 ac7f0ee462917c2d84cf43a2dd312cfb *tests/testthat.R
 725b758cb76f60f28834142643772fe9 *tests/testthat/test-cosimmr_ffvb.R
 4d482143286f7ea79a0b269c096a387f *tests/testthat/test-cosimmr_load.R
-2a14bf7e834063eab0b346d2404f50c6 *vignettes/cosimmr.Rmd
+469abcc952b1f4a302d6640e893474a1 *vignettes/cosimmr.Rmd
+6c6f02dd1251f3158c2f3c4654587796 *vignettes/cosimmr_quick_start.Rmd
